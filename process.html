@@ -1,0 +1,89 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Johan Briger</title>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+	
+	<header>
+  	
+  		<h1>Johan Briger</h1>
+  		<p>- Examinationsuppgift -</p>
+  		<p class="text">"En intressant text som<br/> beskriver sidan"</p>
+  	
+  	</header> 
+    	
+    	 
+    <nav>
+      	<ul>
+        	<li><a href="index.html">Start</a></li>
+        	<li><a class="active" href="process.html">Analys</a></li>
+        	<li><a href="arbetsprover.html">Arbete</a></li>
+        	<li><a href="referenser.html">Referenser</a></li>
+        	<li><a href="kontakt.html">Kontakt</a></li>
+      	</ul>
+    </nav>
+  	
+  
+  
+  
+  	<main>
+  	
+  		<h2>Processanalys</h2>
+  		<br />
+  		<h3>Inledning</h3>
+  		<p>Jag började min uppgift med att testa olika strukturer för att hitta en som passade mina personliga preferenser som även skulle innehålla moment som var nya för mig. Jag gjorde lite efterforskningar för min layout bland webbsidor som jag fann tilltalande. Efter att ha läst kapitlet Design i Smashing Book #2 bestämde jag mig för att sidans innehåll skulle vara i fokus och valde därför att vara sparsam i min layout och design.(Ward 2011)</p>
+  		
+  		
+  		<h3>HTML</h3>
+  		<p>Jag har valt att använda mig av HTML5 pga att den är den senaste av HTML språk, men också för HTML5 inkluderar nya taggar för det som man tidigare skrev som div-taggar. Även andra typer av taggar som t ex för ljud och bild gör detta språk mer komplett och användbart. (Cox, P. 2011)Detta gör språket mer enhetligt och semantiken tydlig. Med denna dokumentstruktur kan man lättare tolka de olika delarnas användning. Jag har därför valt att koda min sida i html5 för en mer semantisk kodning. (Cox, P. 2011)(W3schools, 2015)</p><h3>CSS</h3><p>Jag har valt att använda mig av endast 1 css.fil till detta projekt. Anledningen är bland annat att detta är en relativt enkel websida med få funktioner och element vilket inte blir en så omfattade css-fil. Samma argument gäller till varför jag valt att inte skapa en extra css-fil för mindre skärmar då det räcker att göra förändring med media-queries i min stillmall.(Coyier, C. 2014). Jag valt att lägga min css-reset i min stillmall, den är hämtad från meyerweb.com: (http://meyerweb.com/eric/tools/css/reset/).</p><h3>Struktur</h3><p>Jag har valt att göra en struktur med HTML5´s taggar. ett huvud innehållande rubrik och bild, en horisontell meny följt av sidans innehåll och slutligen en sidfot med kontaktuppgifter. För att ge sidan en snygg inramning så har jag lagt allt i en ”wrapper” samt lagt till en bakgrundsbild. Jag skapade ett html-dokument för varje rubrik innehållande samma struktur men olika innehåll.</p><h3>Head</h3><p>Inom head-taggen har jag lagt min css-fil, länken till min font från googlefonts, title-taggen en tag för att sidans ska bli kompatibel med mindre skärmar så som mobiltelefoner och en tag för att å ä ö ska visas korrekt. Detta är information till webbläsaren som inte ska visas på själva sidan. </p><h3>Header</h3><p>I header-taggen har jag lagt 4 olika element:<br /><br /><b>Bakgrundsbild</b><br /> Bakgrundsbilden har jag valt att koda in i css-filen, detta för att den inte ska påverka placeringen av mina andra element. De ska ha möjlighet att flyta över bilden. Jag har valt att centrera och ej repetera och denna bild p.g.a att jag bara vill ha den en gång.<br /><br /><b>Rubrik</b><br /> I en h1-tagg med marginal vänster och över för rätt placering.<br /><br /><b>Underrubrik</b><br />
+I en p-tagg med marginal vänster och över för rätt placering.<br /><br /><b>Text (Höger)</b><br />I en p-tagg med en egen class för att kunna styra denna text individuellt.Float till höger. Här använder jag mig av transform:translateY för att kunna styra höjden på texten.(W3schools. 2015.)</p><h3>Meny(Navbar)</h3><p>Jag har valt att göra en horisontell meny. Jag ville utforska hur man kan påverka layouten på länkar och använde då olika ”a-taggar i min stillmall. . Jag utgick från instruktioner och tips från w3schools sida och experimenterade runt detta för att hitta en design jag gillade. Använde float-funktionen och display: inline-block för att göra menyn horisontell och ge den knappar. För att förändra bakgrunden på den aktiva länken fick jag experimentera lite då a:active-taggen inte ligger kvar i det html-dokument man länkar vidare till och hittade till slut ett fungerande sätt. Jag valde att lägga en ”class-tagg” på den aktiva länken till respektive html-dokument och gav denna en ny bakgrundsfärg i min stilmall.(W3schools, 2015)</p><h3>Main</h3><p>Vanliga h2-taggar och p taggar med marginaler för att styra placeringen av texten. Bilden har jag valt att lägga i html-dokumentet för att jag räknar den som en del av innehållet samtidigt som den inte krockar med något annat objekt. Jag har satt procent på bilden i stilmallen för att styra storleken till en passande för sidan.</p><h3>Footer</h3><p>I min footer ville jag ha tre lika stora kolumner med text. Jag valde då att göra en class för detta. Inom varje kolumn har jag h3 och p-taggar med marginaler.</p><h3>Resposive design</h3><p>För att styra utseendet beroende på skärmstorlek så använder jag mig av media queries i min stillmall. Jag väljer att lägga min meny lodrätt och tar bort onödiga elemtent. Ändrar marginaler på texten. Väljer att mina element max får ta upp 100% av skärmens storlek för att få dom att passa in(Marcotte, 2010)</p><h3>Övrigt</h3>
+
+<p>Kommentarer för min kodning ligger i filerna index.html och style.css.</p>
+<h3>Referenser:</h3><p>Ward, Matt, Friedman, Vitaly & Lennartz, Sven (eds.) (2011). The smashing book #2 :smashing book number two. Frieburg, Germany: Smashing Media GmbH.<br /><br />W3schools. 2015. Html 5 Introduction.<br />http://www.w3schools.com/html/html5_intro.asp<br /><br />W3schools. 2015. Navbar.<br />http://www.w3schools.com/css/css_navbar.asp<br /><br />W3schools. 2015. Transform<br />(http://www.w3schools.com/cssref/css3_pr_transform.asp)<br /><br />Marcotte, E. 2010. Responsive webdesign<br />http://alistapart.com/article/responsive-web-design<br /><br />Cox, P. 2011.  Top 10 Reasons to Use HTML5 Right Now<br />http://tympanus.net/codrops/2011/11/24/top-10-reasons-to-use-html5-right-now/<br /><br />Coyier, C. 2014. One, Two, or Three.<br />https://css-tricks.com/one-two-three/</p>
+  
+  		<figure>
+  		<img src="jag.jpg" alt="landscape">
+  		<figcaption>Johan Briger</figcaption>
+  		</figure>
+  	</main>
+  
+  
+  
+  <!-- En footer som samlar tre kolumner. Har använt mig av en class tag för att skapa tre likadana textrutor i footern-->
+  	<footer>
+  		<div class="col">
+  			<h3>Adress</h3>
+  			<p>Webbgatan 5</p>
+  			<p>123 45 Internet</p>
+  		</div>
+  	
+  		<div class="col">
+  			<h3>Telefon</h3>
+  			<p>070-123 45 67</p>
+  			<p> 08-33 33 33</p>
+  		</div>
+  	
+  		<div class="col">
+  			<h3>E-post</h3>
+  			<p>johanbriger@gmail.com</p>
+  			<p>jobr0024@skolor.hv.se</p>
+  		</div>
+  	<footer>
+
+
+  
+</div><!--End Wrapper-->  
+  
+  
+  
+</body>
+</html>

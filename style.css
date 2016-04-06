@@ -1,0 +1,337 @@
+
+/**************** CSS RESET ********************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**************** CSS RESET ********************/
+
+	
+	
+	body {
+  	 
+  	background-image: url(background.jpg); /* Bakgrundsbild */
+  
+	}
+ 
+ 	#wrapper {
+  	
+  	margin: 0 auto; /* För att centrera headern i webbläsaren*/
+  	width:960px; /* Bredden på wrappern */
+  
+ 	}
+ 
+/* Start Header */
+
+
+ 	header {
+ 	
+  	
+  	width: 960px; /* Bredden på headern */
+  	height: 200px; /* Höjden på headern*/
+  	background-image: url(bassguitar.jpg); /* En bakgrundsbild i headern */
+  	background-repeat: no-repeat;/* Ingen repetition på bakgrundbilden */
+  	background-position:center;/* Centrera bakgrundsbilden*/
+  	background-color:white; /* Bakgrundsfärg till resterande del av headern*/ 
+  	opacity:0.9; /*För att göra headern lätt genomskinlig */
+  	border: 1px solid black; /*En small ytterkant på headern*/
+ 	
+ 	}
+ 
+ 	header h1	{
+ 	
+ 	font-family:'Share Tech Mono', Arial;/* Typsnitt till rubriktext i headern */ 
+ 	font-size:40px; /* Textstorlek till Rubriktext i headern */
+ 	text-transform:uppercase; /* Alla bokstäver ska vara versaler */
+ 	text-shadow: 1px 1px lightgrey; /* En lätt skugga på bokstäverna*/
+ 	margin-top:20px; /* Marginal från headerns topp */
+ 	margin-left:20px; /* Marginal från headerns vänstra sida */
+ 		
+ 	}
+ 
+	header p	{
+	
+	font-family:'Share Tech Mono', Arial; /* Typsnitt till brödtext i headern */
+ 	font-size:20px; /* Textstorlek till Rubriktext i headern */
+ 	text-shadow: 1px 1px lightgrey; /* En lätt skugga på bokstäverna*/
+ 	margin-left:20px; /* Marginal från headerns vänstra sida */
+ 	 		
+	}
+
+
+	p.text	{
+	
+	font-family:'Share Tech Mono', sans-serif; /* Typsnitt till text */ 
+	font-size:18px; /* Textstorlek */
+	float:right; /* För att placera texten på headerns högra sida */
+	margin-right:50px; /* Marginal från headerns högra sida */
+	
+	/* För att styra placeringen i höjdled så använder jag mig av kodningen nedan */
+	position:relative;
+	top:-20%;
+	webkit-transform:translateY(180%);
+  	moz-transform:translateY(180%);
+  	ms-transform:translateY(180%);
+	transform:translateY(180%);
+	
+	}
+
+
+/* Slut header */
+ 
+ 
+/* Start main */ 
+ 
+ 	main  {
+ 	
+ 	width:960px; /* Bredden på main i pixlar */
+ 	background-color:white;	/* Bakgrundsfärg på main */
+ 	border: 1px solid black; /* Kant runt main*/
+ 	
+ 	}
+ 	
+ 	 
+ 	main h2	{
+	
+	
+	font-family:'Share Tech Mono', Arial;/* Typsnitt */ 
+	font-size:25px; /* Textstorlek */
+ 	margin-left:30px; /* Marginal mot vänster kant */
+ 	margin-top:20px; /* Marginal mot toppen */
+	
+	}
+	
+	
+	main h3 { 
+	
+	font-family:'Share Tech Mono', Arial;/* Typsnitt */ 	
+	margin-left:40px; /* Marginal mot vänster kant */
+	
+	}
+ 
+ 	main p	{
+ 	
+ 	font-family:Helvetica, Arial;/* Typsnitt */ 
+ 	font-size: 15px;/* Textstorlek */
+ 	margin-left:50px; /* Marginal mot vänster kant */
+ 	margin-top:20px; /* Marginal mot toppen */
+ 	margin-bottom:20px; /* Marginal mot botten */
+ 	margin-right:200px; /* Marginal mot höger kant */
+ 	text-align:justify;
+ 	}
+ 
+ 	main img	{
+	
+	
+	width:20%; /* Bredd utifrån verklig storlek */
+	height:20%; /* Höjd utifrån verklig storlek */
+	border-radius:50%; /* För att skapa en rund bild */ 
+ 	margin-left:20px; /* Marginal mot vänster kant */
+ 	margin-top:20px; /* Marginal mot toppen */
+ 	margin-bottom:10px; /* Marginal mot botten */
+ 	
+	
+ 	}
+ 	
+ 	main figcaption {
+ 	
+ 	font-family:'Share Tech Mono' Arial; /* Typsnitt */ 
+ 	margin-left:60px; /* Marginal mot vänster kant */
+ 	margin-bottom:20px; /* Marginal mot botten */
+ 	
+ 	}
+	
+/* Slut main */
+
+
+/* Start Footer */
+ 	
+ 
+ 	footer {
+ 	
+ 	width:960px; /* Bredden på footer i pixlar */
+ 	height:100px; /* Höjden på footern i pixlar*/
+ 	margin-top:3px; /* Marginal mot toppen */
+ 	margin-left:1px; /* Marginal mot vänster kant */
+ 	
+ 	
+ 
+ 	}
+ 
+ 	.col 	{
+ 	
+ 	width:320px; /* Bredden på objektet i pixlar */
+ 	height:98px; /* Höjden på objektet i pixlar*/
+ 	float:left; /* För att mina objekt ska lägga sig efter varandra i rad*/
+ 	background-color: #444; /* Bakgrundsfärg */
+ 	opacity:0.9; /* För att göra objektet lätt genomskinligt */	
+ 	
+ 	}  	
+ 
+ 	.col h3	{
+ 	
+ 	margin-top:15px; /* Marginal mot toppen */
+ 	margin-left:60px; /* Marginal mot vänster kant */
+ 	margin-bottom:8px; /* Marginal mot botten */
+ 	font-family: 'Share Tech Mono', Arial; /* Typsnitt */ 	
+ 	
+ 	}
+ 	
+ 	.col p		{
+ 	
+ 	font-size:13px; /* Textstorlek */
+ 	font-family:Arial; /* Typsnitt */ 
+ 	margin-left:60px; /* Marginal mot vänster kant */
+ 	margin-bottom:2px; /* Marginal mot botten */
+ 
+ 	}
+ 
+/* Slut Footer */
+ 
+ 
+/* Start Meny */
+ 
+	nav ul {
+  	
+  	width:960px; /* Bredden på listan i pixlar*/
+  	list-style: none;/* Tar bort prickarna framför listobjekten */
+  	background-color: #444; /* Listans bakgrundsfärg */
+  	text-align: center; /* för att centrera texten i listan */
+  	margin-bottom: 3px; /* Skapa marginal till objektet under */
+  	margin-top:3px; /* Skapa marginal till objektet över */
+  	border:1px solid black; /* Skapar en svart kant runt listan*/
+  	opacity:0.9; /* För att göra listan lätt genomskinlig */
+  
+	}
+	
+	nav li {
+   	
+   	font-family:'Share Tech Mono', sans-serif;/* Typsnitt */ 
+   	text-transform:uppercase; /* Alla bokstäver ska vara versaler */
+   	width: 150px; /* Bredden på listobjekten i pixlar*/
+   	height: 50px; /* Höjden på listobjekten i pixlar*/
+   	line-height: 50px; /* Avståndet mellan raderna i pixlar*/
+   	font-size: 20px; /* Textstorlek */
+   	display: inline-block; /* För att kunna sätta en höjd och bredd på objekten */
+	
+	}
+ 
+	nav a {
+  	
+  	text-decoration: none;/* Ta bort understreck */
+  	color: #fff; /* Textens färg */ 
+  	display: block; /* För att skapa knappar av länkarna */
+  	transition: .3s background-color;/* För att ge en jämnare övergång när man rör sig över menyn */
+	
+	}
+  
+	nav a:hover {
+  	
+  	background-color: #005f6f; /* Backgrundsfärg när man rör sig över länken */
+ 
+	}
+
+
+	a.active	{ 
+	
+	background-color:#727171; /* Lägger en ljusare nyans på menyknappen till den aktiva sidan */
+		
+	}
+
+/* Slut Meny */
+
+
+/* Layout för print-läge */
+
+
+@media print {
+	
+	nav { display:none;}/* Tar bort menyn från utskrift */
+		
+	#wrapper, main, header, footer {border:none;} /* Tar bort ramar från utskrift */
+	
+	img { display:none; }/* Tar bort bilder från utskrift */
+	
+	}
+
+/* Layout för Mobil-läge */
+
+
+@media screen and (max-width:600px)	{
+	
+	#wrapper, main, header, nav ul  {width:100%;}/* Anpassar storleken efter skärmen */	
+					
+	nav li	{ width:100%; display:block; }/* För att passa en mindre skärm så gör jag menyn lodrätt*/	
+		
+	nav a { width:100%; text-align:center; }/* Anpassar storleken efter skärmen */
+					
+	main p { margin-right:20px; margin-left:30px; }/* Ändrar marginalen på texten för att bättre passa in den på mindre skärm */
+			
+	footer { border:0px; width:100%; }/* Anpassar storleken efter skärmen */
+							
+	.col { width:100%; text-align:center; }/* För att passa en mindre skärm så gör jag footern lodrätt*/
+			
+	.col h3	{ margin-top:10px; margin-left:0px; margin-bottom:4px; }/* Ändrar margins för texten o footern */
+ 	
+ 	.col p	{ font-size:10px; margin-left:0px; }/* Ändrar margins för texten o footern */
+	
+	p.text	{ display:none; }/* Tar bort text som inte ryms i bannern */
+	
+	header p { display:none; }/* Tar bort text som inte ryms i bannern */
+	
+	main figcaption {margin-left:20px;} /* Ändrar marginalen åt vänster i mindre skärm */
+	
+	}
+
+ 
+ 
+ 
+ 
+
